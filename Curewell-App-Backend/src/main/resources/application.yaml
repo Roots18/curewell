@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/curewell_db
+    username: root
+    password: PHqHB/f*5m8MF3T@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    jwt:
+      secret: dGhpcyBpcyBteSBqd3QgdG9rZW4ga2V5IGZvciBzZWN1cmluZyBteSBhcHBsaWNhdGlvbiA=
+      expiration: 86400000
+
+server:
+  port: 8080
